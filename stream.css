@@ -1,0 +1,399 @@
+html {
+  font-family: Verdana, Geneva, Tahoma, Sans-serif;
+  background-color: #020659;
+  color: #ffffff;
+}
+
+body {
+  margin: auto;
+  max-width: 1335px;
+}
+
+header {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+}
+
+.navigation {
+  background-color: #2104d9;
+  display: grid;
+  vertical-align: center;
+  position: relative;
+}
+
+.title {
+    margin: auto;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 2em;
+    line-height: 50px;
+}
+
+.header {
+  background: linear-gradient(90deg, #2004d5,#000);
+  margin: 0;
+  padding-left: 10px;
+  padding-right: 20px;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+main {
+  background-color: #ffffff;
+}
+
+h1 {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+h2 {
+  padding: 30px 0 0 32px;
+}
+
+h3 {
+  padding: 0,0,0,0;
+  margin: 0;
+}
+
+h2,
+h3 {
+  color: #590242;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.scroll {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.scroll section {
+  position: relative;
+  margin: 16px;
+}
+
+.scroll div {
+  position: absolute;
+  top: 251px;
+  background-color: rgba(255, 255, 255, 0.75);
+  padding: 5px;
+  height: 50px;
+  width: 350px;
+}
+
+dl {
+  color: #590242;
+  display: flex;
+  position: relative;
+  font-size: 15px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+dt {
+  position: absolute;
+  font-style: italic;
+  left: 5px;
+  bottom: 2.5px;
+}
+
+dd {
+  position: absolute;
+  left: 12px;
+  bottom: 2.5px;
+}
+
+audio {
+  position: absolute;
+  bottom: 100px;
+  left: 5px;
+  right: 5px;
+
+}
+
+.trend {
+  background-color: #590242;
+  text-decoration: none;
+  color: #ffffff;
+  display: block;
+  text-align: center;
+  margin: 10px 0 30px 32px;
+  font-size: 15px;
+  padding: 10px;
+  width: 150px;
+}
+
+.trend:hover {
+  background-color: #020659;
+}
+
+.your-playlist {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  overflow-x: auto;
+  overflow-y: hidden;
+  background-color: #2699fb;
+}
+
+.your-playlist figure {
+  position: relative;
+  background-color: #0d8dfb;
+  text-align: center;
+  height: 300px;
+}
+
+figure h3 {
+  color: #ffffff;
+}
+
+figcaption p {
+  font-size: 14px;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+
+figure img {
+  padding: 10px,10px,10px;
+}
+
+figcaption {
+  color: #ffffff;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.curated-playlist {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  overflow-x: auto;
+  overflow-y: hidden;
+  background-color: #030a8c;
+}
+
+.curated-playlist figure {
+  background-color: #020873;
+  height: 300px;
+  text-align: center;
+  margin: 10px;
+  position: relative;
+}
+
+audio::-webkit-media-controls-mute-button {
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+audio::-webkit-media-controls-play-button {
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+audio::-webkit-media-controls-enclosure {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+#trending ::-webkit-scrollbar {
+  width: 10px;
+}
+
+#trending ::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 10px #590242;
+}
+
+#trending ::-webkit-scrollbar-thumb {
+  background: #590242;
+  border-radius: 5px;
+}
+
+#trending ::-webkit-scrollbar-thumb:hover {
+  background: #020659;
+}
+
+#playlists ::-webkit-scrollbar,
+#curated ::-webkit-scrollbar {
+  width: 10px;
+}
+
+#playlists ::-webkit-scrollbar-track,
+#curated ::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 10px #020659;
+}
+
+#playlists ::-webkit-scrollbar-thumb,
+#curated ::-webkit-scrollbar-thumb {
+  background: #020659;
+  border-radius: 5px;
+}
+
+#playlists ::-webkit-scrollbar-thumb:hover,
+#curated ::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+}
+
+footer {
+  text-align: center;
+  color: #590242;
+  background-color: #ffffff;
+  padding: 20px 0 20px 0;
+}
+
+@media screen and (min-width: 834px) {
+  ul {
+    overflow: visible;
+    position: absolute;
+    top: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    list-style: none;
+    align-items: center;
+    grid-gap: 20px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  label span,
+  input {
+    display: none;
+  }
+
+  nav a:hover {
+    background-color: #590242;
+  }
+
+  nav ul li a {
+    text-transformation: uppercase;
+  }
+
+  button {
+    float: right;
+    position: relative;
+    right: 10px;
+  }
+
+  .both-play {
+    clear: both;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .your-playlist {
+    display: grid;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: #2699fb;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    height: 500px;
+  }
+
+  .your-playlist figure {
+    display: inline-flex;
+    position: relative;
+    background-color: #0d8dfb;
+    text-align: center;
+    margin: 10px;
+    height: 155px;
+    padding-bottom: 10px;
+  }
+
+  .curated-playlist {
+    display: grid;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: #030a8c;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    height: 500px;
+  }
+
+  .curated-playlist figure {
+    display: inline-flex;
+    background-color: #020873;
+    text-align: center;
+    position: relative;
+    height: 155px;
+    margin: 10px,10px,10px;
+  }
+
+  .curated-playlist figcaption {
+    justify-content: center;
+    align-items: center;
+    horizontal-align: center;
+  }
+  ul {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height .3s ease-out;
+}
+label {
+    display: inline-block;
+    padding: 30px 20px;
+    position: relative;
+    user-select: none;
+}
+label span {
+    background-color: #ffffff;
+    display: block;
+    height: 3px;
+    position: relative;
+    transition: background-color .3s ease-out;
+    width: 18px;
+}
+label span:before, label span:after {
+    background: #ffffff;
+    content: '';
+    display: block;
+    position: absolute;
+    transition: all .3s ease-out;
+    height: 100%;
+    width: 100%;
+}
+label span:before {
+    top: 5px;
+}
+label span:after {
+    top: -5px;
+}
+input {
+    display: none;
+}
+input:checked ~ ul {
+    max-height: 500px;
+}
+input:checked ~ label span {
+    background: transparent;
+}
+input:checked ~ label span:before {
+    transform: rotate(-45deg);
+}
+input:checked ~ label span:after {
+    transform: rotate(45deg);
+}
+input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps) span:after {
+    top: 0;
+}
+
+@media screen and (min-width:834px) {
+    ul {
+        overflow: visible;
+        position: absolute;
+        top: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+    label span, input {
+        display: none;
+    }
+}
