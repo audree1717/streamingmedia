@@ -273,7 +273,7 @@ footer {
   }
 
   nav ul li a {
-    text-transformation: uppercase;
+    font-weight: bold;
   }
 
   button {
@@ -330,7 +330,7 @@ footer {
   .curated-playlist figcaption {
     justify-content: center;
     align-items: center;
-    horizontal-align: center;
+    position: center;
   }
   ul {
     overflow: hidden;
@@ -396,4 +396,4 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
     label span, input {
         display: none;
     }
-}
+  }
